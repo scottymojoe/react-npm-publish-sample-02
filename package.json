@@ -1,6 +1,6 @@
 {
   "name": "publish-sample-02",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "The thing for the stuff.",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
