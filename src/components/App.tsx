@@ -1,26 +1,22 @@
-import React, { useState } from 'react'
+import React from 'react'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import * as appInterfaces from '../shapes/interfaces'
+import CounterSample from './routes/counter-sample'
+import LongForm from './routes/long-form'
 
-type Props = {
-  value?: number
-}
-const MyCounter = ({ value = 0 }: Props) => {
-  const [counter, setCounter] = useState(value)
-
-  const onMinus = () => {
-    setCounter((prev) => prev - 1)
+const SiteRequestApp = (props: appInterfaces.ISiteRequestAppProperties) => {
+  const routeProps: appInterfaces.RouteProperties = {
+    siteRequestAppProperties: props,
+    routeParameters: [],
   }
-
-  const onPlus = () => {
-    setCounter((prev) => prev + 1)
-  }
-
   return (
-    <div>
-      <h1>Counter: {counter}</h1>
-      <button onClick={onMinus}>-</button>
-      <button onClick={onPlus}>+</button>
-    </div>
+    <BrowserRouter basename={props.baseRouteUrl}>
+      <Routes>
+        <Route path='long-form' element={<LongForm {...routeProps} />} />
+        <Route path='counter-sample' element={<CounterSample {...routeProps} value={0} />} />
+      </Routes>
+    </BrowserRouter>
   )
 }
 
-export default MyCounter
+export default SiteRequestApp
