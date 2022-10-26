@@ -1,3 +1,3 @@
-import MyCounter from './components/app'
+import SiteRequestApp from './components/app'
 
-export { MyCounter }
+export { SiteRequestApp }
