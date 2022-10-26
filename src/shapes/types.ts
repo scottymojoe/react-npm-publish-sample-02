@@ -1,7 +1,7 @@
 export type apiUrls = {
-  [key: string]: any
-}
+	[key: string]: any;
+};
 
 export type routeParameters = {
-  [key: string]: any
-}
+	[key: string]: any;
+};

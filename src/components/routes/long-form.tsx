@@ -1,13 +1,13 @@
-import React from 'react'
-import * as appInterfaces from '../../shapes/interfaces'
-import { DialogBlockingExample } from '../fluent/dialogs'
+import React from "react";
+import * as appInterfaces from "../../shapes/interfaces";
+import { DialogBlockingExample } from "../fluent/dialogs";
 
 const LongForm = (props: appInterfaces.RouteProperties) => {
-  return (
-    <>
-      <DialogBlockingExample />
-    </>
-  )
-}
+	return (
+		<>
+			<DialogBlockingExample />
+		</>
+	);
+};
 
-export default LongForm
+export default LongForm;

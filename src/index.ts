@@ -1,3 +1,3 @@
-import SiteRequestApp from './components/app'
+import SiteRequestApp from "./components/app";
 
-export { SiteRequestApp }
+export { SiteRequestApp };
